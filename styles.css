@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  background-color: hsl(217, 19%, 24%);
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.container--content {
+  text-align: center;
+}
+
+.advice--heading {
+  color: hsl(150, 100%, 66%);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.advice {
+  margin-bottom: 1.2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.divider {
+  margin-bottom: 2.5rem;
+}
+
+.dice--container {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  padding: 1.2rem;
+  position: absolute;
+  left: 41%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice--container:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 40px 10px rgb(82, 255, 168);
+}
+
+.dice {
+  background-color: hsl(150, 100%, 66%);
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  .divider {
+    content: url(./images/pattern-divider-desktop.svg);
+  }
+  .dice--container {
+    left: 44%;
+  }
+}
